@@ -2,21 +2,18 @@
 import java.util.*;
 
 public class newfilr {
+    public static int avg(int a,int b, int c){
+        return (a+b+c)/3;
+    }
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int m = sc.nextInt();
-        for(int i = 1;i<=n;i++){
-            for(int j= 1; j<=m; j++){
-                if(i==1||j== 1||i==n||j== m){
-                    System.out.print("*");
-                }
-                else{
-                    System.out.print(" ");
-                }
-            }
-            System.out.print("\n");
-        }
+        System.out.print("The first number - ");
+        int a = sc.nextInt();
+        System.out.print("The Sceond number - ");
+        int b = sc.nextInt();
+        System.out.print("The Third number - ");
+        int c = sc.nextInt();
+        System.out.print("the average of the three numbers is - "+ avg(a,b,c));
         sc.close();
     }
 }
