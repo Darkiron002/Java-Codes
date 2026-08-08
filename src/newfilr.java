@@ -4,19 +4,43 @@ import java.util.Scanner;
 public class newfilr {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        
-        System.out.print("Give the ammount to get : \n");
-        double p = sc.nextDouble();
+       
+        String name = sc.nextLine();
 
-        System.out.print("Decode the amount of time for the interest : \n");
-        int t = sc.nextInt();
-        
-        System.out.println("What is the interest ratio : ");
-        double r = sc.nextDouble();
-        double rate = r/100;
+        //String methods 
 
-        double intrest_amount =p* Math.pow((1+rate),t);
-        System.out.printf("Your return amount after %d years is %.2f",t ,intrest_amount);
+        int length = name.length();  // gives the length og the string 
+
+        char ch = name.charAt(3);  // gives the char at the specific position 
+
+        int index= name.indexOf("n"); // gives the position of the char given 
+        int lastIndex = name.lastIndexOf("n");  // gievs the last index of the char
+
+        name = name.toUpperCase();
+        System.out.println("my name is - "+name);
+        name = name.toLowerCase();
+        System.out.println("name in lower case "+name);
+        boolean tr = name.isEmpty(); // this shows false if name typed otherwise true
+        
+        
+        if(tr){
+            System.out.println("Your name is typed ");
+        }else{
+            System.out.println("your name is - "+name);
+        }
+
+        // returns true if contains the specific character 
+        if(name.contains("a")){
+            System.out.println("your name contains a");
+        }else{
+            System.out.println("your name doesn't have a");
+        }
+        // equals method that returns true if the string inside is the same to the input
+        if(name.equals("Chayan")){
+            System.out.println("Your cant write this name ");
+        }else{
+            System.out.println("your name is "+ name);
+        }
 
 
 
