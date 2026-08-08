@@ -5,43 +5,11 @@ public class newfilr {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
        
-        String name = sc.nextLine();
-
-        //String methods 
-
-        int length = name.length();  // gives the length og the string 
-
-        char ch = name.charAt(3);  // gives the char at the specific position 
-
-        int index= name.indexOf("n"); // gives the position of the char given 
-        int lastIndex = name.lastIndexOf("n");  // gievs the last index of the char
-
-        name = name.toUpperCase();
-        System.out.println("my name is - "+name);
-        name = name.toLowerCase();
-        System.out.println("name in lower case "+name);
-        boolean tr = name.isEmpty(); // this shows false if name typed otherwise true
-        
-        
-        if(tr){
-            System.out.println("Your name is typed ");
-        }else{
-            System.out.println("your name is - "+name);
-        }
-
-        // returns true if contains the specific character 
-        if(name.contains("a")){
-            System.out.println("your name contains a");
-        }else{
-            System.out.println("your name doesn't have a");
-        }
-        // equals method that returns true if the string inside is the same to the input
-        if(name.equals("Chayan")){
-            System.out.println("Your cant write this name ");
-        }else{
-            System.out.println("your name is "+ name);
-        }
-
+        //substring() is a method used to extract a protion of a string 
+        String email = "chayanmistry14@gamil.com";
+        String username = email.substring(0,email.indexOf("@"));
+        String domain = email.substring(14,23);
+        System.out.println("The two substrings are "+username +" "+domain);
 
 
         sc.close();

@@ -8,13 +8,21 @@ public class StrMethods {
         String name = sc.nextLine();
 
         //String methods 
+        int length;
+        char ch;
+        int index;
+        int lastIndex;
+        int lastIndexOf;
 
-        int length = name.length();  // gives the length og the string 
 
-        char ch = name.charAt(3);  // gives the char at the specific position 
 
-        int index= name.indexOf("n"); // gives the position of the char given 
-        int lastIndex = name.lastIndexOf("n");  // gievs the last index of the char
+
+        length = name.length();  // gives the length og the string 
+
+        ch = name.charAt(3);  // gives the char at the specific position 
+
+        index= name.indexOf("n"); // gives the position of the char given 
+        lastIndex = name.lastIndexOf("n");  // gievs the last index of the char
 
         name = name.toUpperCase();
         System.out.println("my name is - "+name);
