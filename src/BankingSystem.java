@@ -60,7 +60,7 @@ public class BankingSystem {
 
         
        } while (choice !=5);
-
+       sc.close();
     }
     //show Account Holder Detail
     static void ShowName(String name,double money ){
