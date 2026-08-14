@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.Random;
 import java.util.Arrays;
 
-public class newfilr {
+public class Array {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Random random = new Random();
