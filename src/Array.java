@@ -53,8 +53,9 @@ public class newfilr {
             System.out.print("Enter your animal name: ");
             animal[i]= sc.nextLine();
         }
+        System.out.println("************************");
         for(int i =0; i<noAni;i++){
-            System.out.print(animal[i]);
+            System.out.println(animal[i]);
             
         }
 
