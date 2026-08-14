@@ -7,58 +7,24 @@ public class newfilr {
         Scanner sc = new Scanner(System.in);
         Random random = new Random();
 
-        // Array declearation in java 
-        String[] fruits = {"Apple","Coconut", "Banana"};
-        String[] foods = new String[3];// creating a empty array 
-        foods[0] = "Biriany";
-        foods[1]="Chicken Kasha";
-        foods[2]="Mutton";
-        String[] animal = new String[2];
-        //making an array with custom array lenth and inpit 
-        String[] name;
-        int size ;
-        System.out.println("What should be the number of elements of the arrauy name ?: ");
-        size = sc.nextInt(); // here as next int doesn't contain a \n character we have to free the buffer so that the nexr nextLine() methods get to work
-        name = new String[size];
-        sc.nextLine();
+        int[] numbers = {4,6,3,2,5,13,2,9};
+        int target = 55;
+        boolean isFound = false;
 
-        // method to find lenght of the array
-        int numOfArray = fruits.length;
-        int noAni = animal.length;
-        //Built in sort method 
-        Arrays.sort(fruits);
-        // Fill in method in arrays ,
-        // Arrays.fill(foods,"Polao");
+        // seraching the target in an array
+        for(int i =0;i<numbers.length; i++){
+            if(numbers[i] == target){
+                System.out.println("You found the number at "+i);
+                isFound=true;
+                break;
+            }else{
+                System.out.println("its not target ");
 
-
-
-        //printing the array 
-        for(int i = 0; i<numOfArray;i++){
-            System.out.println(fruits[i]);
+            }
         }
-        System.out.println("************************");
-        // Enhanced For loop
-        for(String fruit: fruits){ // For every element in fruits do the below line 
-            System.out.println(fruit);
+        if(!isFound){
+            System.out.println("the entire array doesn't contain the number ");
         }
-        System.out.println("************************");
-
-        for(String food:foods){
-            System.out.println(food);
-        }
-
-        System.out.println("************************");
-        //Taking input for an empty array
-        for(int i =0; i<noAni;i++){
-            System.out.print("Enter your animal name: ");
-            animal[i]= sc.nextLine();
-        }
-        for(int i =0; i<noAni;i++){
-            System.out.print(animal[i]);
-            
-        }
-
-
 
 
         sc.close();
