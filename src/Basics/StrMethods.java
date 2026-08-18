@@ -1,5 +1,6 @@
-import java.util.Scanner;
+package Basics;
 
+import java.util.Scanner;
 
 public class StrMethods {
     public static void main(String[] args) {

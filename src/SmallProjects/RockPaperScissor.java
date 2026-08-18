@@ -1,3 +1,4 @@
+package SmallProjects;
 /**
  * RockPaperScissor
  */

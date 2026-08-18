@@ -1,3 +1,4 @@
+package SmallProjects;
 import java.util.Scanner;
 
 public class Quizgame {
