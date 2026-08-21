@@ -3,7 +3,7 @@
  */
 
 interface hunter{
-    void hunt();
+    void hunt();// thsi method is not defiend but have to be defined in other children
 }
 interface pray{
     void flee();
@@ -11,7 +11,7 @@ interface pray{
 
 class rabbit implements pray{
     @Override
-    public void flee() {
+    public void flee() { // defining the abstract method 
         System.out.println("The rabit is fleeing ");
     }
 }
