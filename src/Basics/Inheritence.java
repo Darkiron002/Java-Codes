@@ -29,6 +29,8 @@ class Pug extends Dog{
         this.name= name;
         this.level = level;
     }
+    @Override  //method ovevrridding 
+    
     void speak(){
         System.out.println("The pug is barking like mad ");
     }
